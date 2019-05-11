@@ -1,12 +1,49 @@
 <!DOCTYPE html>
 <!--
     Name: Pratik Baandal
-    Date Created: 05/06/2019
-    Most recent revision: 1
+    Date Created: 05/10/2019
+    Most recent revision: 2
 -->
 <html lang="en">
   <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Menu</title>
+    <style>
+      nav {
+        background-color: #DEB887;
+        border-top: thin #5b7d87 solid;
+        border-bottom: thin #5b7d87 solid;
+        padding-top: 12px;
+        padding-bottom: 12px;
+      }
+      nav .btn {
+        background-color: #5b7d87;
+        color: #DEB887;
+        text-decoration: underline;
+      }
+      nav .btn:hover {
+        font-weight: bold;
+      }
+      nav .btn:visited {
+        background-color: #5b7d87;
+        color: #FFDEAD;
+      }
+      nav .active{
+        text-decoration:none;
+      }
+      .table {
+        margin: auto;
+        width: 50% !important;
+      }
+      .table-striped>tbody>tr:nth-child(odd)>td,
+      .table-striped>tbody>tr:nth-child(odd)>th {
+        background-color: #DEB887; // Choose your own color here
+      }
+
+    </style>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="styles/restaurantStyles.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
     <header>
@@ -14,81 +51,117 @@
     </header>
 
     <nav>
-      <hr />
-      <p><a href="RestHome.html">Home</a> <a href="RestMenu.html">Menu</a> <a href="RestContact.html">Contact Us</a></p>
-      <hr />
+        <a class="btn badge-pill" href="RestHome.html">Home</a>
+        <a class="btn badge-pill active" href="RestMenu.html">Menu</a>
+        <a class="btn badge-pill" href="RestContact.html">Contact Us</a>
     </nav>
 
-    <section>
-      <article id="Burgers">
-        <p>
-          <b>Burger and Fries</b><br />
-          An American Classic!<br />
-          Your choice - with or without cheese<br />
-          Pickle, onion, tomato, and lettuce<br />
-          Served with our famous thick cut<br />
-          french fries<br />
-          $7.95<br />
-        </p>
-      </article>
-      <article id="Hot Dogs">
-        <p>
-          <b>Hot Dog and Chips</b><br />
-          A Summer Classic!<br />
-          Your choice - white or wheat bun<br />
-          Relish, mustard, and ketchup<br />
-          Served with our house-made chips<br />
-          $7.95<br />
-        </p>
-      </article>
-      <article id="Sausages">
-        <p>
-          <b>Italian Sausage and Peppers</b><br />
-          An All-time Favorite!<br />
-          Your choice - mild or spicy Cole Slaw<br />
-          Served with garlic mashers<br />
-          $10.95<br />
-        </p>
-      </article>
-      <article id="Sandwiches">
-        <p>
-          <b>Tenderloin Sandwich and Chips</b><br />
-          Really Hits the Spot!<br />
-          Plain or Sesame Seed Bun<br />
-          Pickle, onion, tomato, and lettuce<br />
-          Served with our house-made chips<br />
-          $8.95<br />
-        </p>
-      </article>
-      <article id="Salads">
-        <p>
-          <b>House Salad</b><br />
-          On the Lighter Side<br />
-          Your choice - with or without cheese<br />
-          Iceberg lettuce, tomatoes, peppers<br />
-          Thousand Island or Ranch Dressing<br />
-          Served with a dinner roll<br />
-          $6.95<br />
-        </p>
-      </article>
-      <article id="Briskets">
-        <p>
-          <b>Brisket Sandwich and Fries</b><br />
-          A Taste of Texas!<br />
-          Smoked Brisket on thick-cut<br />
-          Texas Toast<br />
-          Cole Slaw<br />
-          Served with our famous thick cut<br />
-          french fries<br />
-          $7.95<br />
-        </p>
-      </article>
-    </section>
+    <div class="container">
+      <br />
+      <div class="row">
+        <div class="col">
+          <p class="text-center">
+            <b>Burger and Fries</b><br />
+            An American Classic!<br />
+            Your choice - with or without cheese<br />
+            Pickle, onion, tomato, and lettuce<br />
+            Served with our famous thick cut<br />
+            french fries<br />
+            $7.95<br />
+          </p>
+        </div>
+        <div class="col">
+          <p class="text-center">
+            <b>Hot Dog and Chips</b><br />
+            A Summer Classic!<br />
+            Your choice - white or wheat bun<br />
+            Relish, mustard, and ketchup<br />
+            Served with our house-made chips<br />
+            $7.95<br />
+          </p>
+        </div>
+        <div class="col">
+          <p class="text-center">
+            <b>Italian Sausage and Peppers</b><br />
+            An All-time Favorite!<br />
+            Your choice - mild or spicy Cole Slaw<br />
+            Served with garlic mashers<br />
+            $10.95<br />
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <p class="text-center">
+            <b>Tenderloin Sandwich and Chips</b><br />
+            Really Hits the Spot!<br />
+            Plain or Sesame Seed Bun<br />
+            Pickle, onion, tomato, and lettuce<br />
+            Served with our house-made chips<br />
+            $8.95<br />
+          </p>
+        </div>
+        <div class="col">
+          <p class="text-center">
+            <b>House Salad</b><br />
+            On the Lighter Side<br />
+            Your choice - with or without cheese<br />
+            Iceberg lettuce, tomatoes, peppers<br />
+            Thousand Island or Ranch Dressing<br />
+            Served with a dinner roll<br />
+            $6.95<br />
+          </p>
+        </div>
+        <div class="col">
+          <p class="text-center">
+            <b>Brisket Sandwich and Fries</b><br />
+            A Taste of Texas!<br />
+            Smoked Brisket on thick-cut<br />
+            Texas Toast<br />
+            Cole Slaw<br />
+            Served with our famous thick cut<br />
+            french fries<br />
+            $7.95<br />
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-12">
+          <table class="table table-striped table-bordered">
+            <thead>
+              <tr>
+                <th scope="col" colspan="2">Beverages</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Root Beer</td>
+                <td>$3.00</td>
+              </tr>
+              <tr>
+                <td>Bottled Water</td>
+                <td>$1.25</td>
+              </tr>
+              <tr>
+                <td>Lemonade</td>
+                <td>$1.00</td>
+              </tr>
+              <tr>
+                <td>Iced Tea</td>
+                <td>$1.25</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
 
     <footer>
-      <hr />
       <p>4757 Devanha Gardens, Asico, WI, 53072</p>
       <p>458-216-6778</p>
     </footer>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
   </body>
 </html>

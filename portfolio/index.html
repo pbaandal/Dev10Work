@@ -7,23 +7,65 @@
 <html lang="en">
   <head>
     <title>Pratik Baandal's Portfolio</title>
+    <link href="styles/main.css" rel="stylesheet" type="text/css" />
+    <style>
+      caption {
+          font-weight: bold;
+          font-size: 1.2em;
+          margin-bottom: 8px;
+      }
+      table, th, td {
+        border: 1px solid #0d1f2d;
+        border-collapse: collapse;
+        padding: 5px 10px;
+      }
+      table {
+        width: 90%;
+        margin: auto;
+      }
+      tr {
+        height: 30px;
+      }
+      th {
+        background-color: #546a7b;
+        color: #f2eded;
+      }
+      tbody tr:nth-child(odd) {
+        background-color: #e4c3ad;
+      }
+      .clear-float {
+        clear:both;
+      }
+      article img {
+        float:left;
+      }
+      .right-content {
+        float:left;
+      }
+      article {
+        margin-bottom: 16px;
+      }
+    </style>
   </head>
   <body>
     <header>
       <h1>Portfolio for Pratik Baandal</h1>
     </header>
 
-    <nav>
-      <hr />
+    <nav class="border">
+      <!--<hr/>-->
       <!-- We need to add links to projects.html, contact.html, and testimonials.html -->
-      <p><a href="projects.html">Projects</a> <a href="contact.html">Contact Me</a> <a href="testimonials.html">Testimonials</a></p>
-      <hr />
+      <p><a href="projects.html">Projects</a></p>
+      <p><a href="contact.html">Contact Me</a></p>
+      <p><a href="testimonials.html">Testimonials</a></p>
+      <!--<hr/>-->
+      <div class="clear-float"></div>
     </nav>
 
     <section>
-      <article id="aboutme">
+      <article class="border" id="aboutme">
         <h2><em>About Me</em></h2>
-        <a href="contact.html"><img src="images/PratikB.jpg" alt="Portrait of Pratik Baandal" height="400"/></a>
+        <a href="contact.html"><img src="images/PratikB.jpg" alt="Portrait of Pratik Baandal" height="400" style="float:left;"/></a>
         <p>I recently graduated from <strong>Purdue University</strong> with a B.S. Degree in <strong>Computer
       Engineering</strong> and a Minor in <strong>Mathematics</strong>. I grew up in Eden Prairie,
       Minnesota but I was born in Mumbai, India.</p>
@@ -31,11 +73,13 @@
       who live in the same city as me, so I basically treat them like little
       brothers. I do not have any pets, but I am hoping to adopt a cat or dog
       once I save enough money.</p>
+        <div class="clear-float"></div>
       </article>
 
       <article id="experiences">
         <h2><em>Past Experiences</em></h2>
-        <a href="projects.html"><img src="images/Purdue.jpg" alt="Picture of Purdue Arch"/></a>
+        <a href="projects.html"><img src="images/Purdue.jpg" alt="Picture of Purdue Arch" width="300" height="200"/></a>
+        <div class="right-content">
         <table>
           <caption>Employment History</caption>
           <tr>
@@ -59,11 +103,14 @@
             <td>AMC Theatres</td>
           </tr>
         </table>
+        </div>
+        <div class="clear-float"></div>
       </article>
 
       <article id="hobbies">
         <h2><em>Hobbies</em></h2>
         <a href="testimonials.html"><img src="images/swimpool.jpg" alt="Picture of Swimming Pool"/></a>
+        <div class="right-content">
         <ul>
             <li>Physical Activities</li>
             <ol>
@@ -92,11 +139,13 @@
                 <li>Childish Gambino</li>
             </ul>
         </ul>
+        </div>
+        <div class="clear-float"></div>
       </article>
     </section>
 
     <footer>
-      <hr />
+      <!--<hr/>-->
       <p>&copy; 2019 Pratik Baandal. All rights reserved.</p>
     </footer>
 

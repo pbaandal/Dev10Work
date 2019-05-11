@@ -1,0 +1,27 @@
+/*
+Creator: Your Name
+Date created: Today's date
+Date last modified:
+*/
+
+header{
+    background-color: #5b7d87;
+    color: #fef9ff;
+    height: 100px;
+    text-align: center;
+    padding: 30px 10px 20px 10px;
+    font-family: Copperplate, "Copperplate Gothic Light", fantasy;
+}
+
+footer{
+  background-color: #5b7d87;
+  color: #fef9ff;
+  height: 135px;
+  text-align: center;
+  padding: 30px 10px 20px 10px;
+  font-family: Copperplate, "Copperplate Gothic Light", fantasy;
+}
+
+body{
+    background: #F5DEB3;
+}
