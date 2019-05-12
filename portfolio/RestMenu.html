@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <!--
     Name: Pratik Baandal
-    Date Created: 05/10/2019
-    Most recent revision: 2
+    Date Created: 05/06/2019
+    Most recent revision: 05/11/2019
 -->
 <html lang="en">
   <head>
@@ -40,10 +40,17 @@
       .table-striped>tbody>tr:nth-child(odd)>th {
         background-color: #DEB887; // Choose your own color here
       }
-
+      div {
+        text-align: center;
+      }
+      .jumbotron-fluid {
+        background-color: #5b7d87;
+        color: #fef9ff;
+      }
     </style>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="styles/restaurantStyles.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
   </head>
   <body>
     <header>
@@ -51,11 +58,32 @@
     </header>
 
     <nav>
-        <a class="btn badge-pill" href="RestHome.html">Home</a>
-        <a class="btn badge-pill active" href="RestMenu.html">Menu</a>
-        <a class="btn badge-pill" href="RestContact.html">Contact Us</a>
+      <div class="row">
+        <div class="col-sm-3">
+          <a class="btn badge-pill" href="RestHome.html"><i class="fas fa-home"></i></a>
+          <a class="btn badge-pill active" href="RestMenu.html">Menu</a>
+          <a class="btn badge-pill" href="RestContact.html">Contact Us</a>
+       </div>
+     </div>
     </nav>
-
+    <div class="jumbotron-fluid">
+      <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel" data-interval="3000">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <h5>Hey, Big News!</h5>
+            <h8>We are opening up a new location in Edina, MN!</h8>
+          </div>
+          <div class="carousel-item">
+            <h5>We're rolling out our seasonal menu, </h5>
+            <h8>with special options for this season.</h8>
+          </div>
+          <div class="carousel-item">
+            <h5>The Drink of the Month is:</h5>
+            <h8>SG Special Brew</h8>
+          </div>
+        </div>
+      </div>
+    </div><br />
     <div class="container">
       <br />
       <div class="row">

@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <!--
     Name: Pratik Baandal
-    Date Created: 05/10/2019
-    Most recent revision: 2
+    Date Created: 05/06/2019
+    Most recent revision: 05/11/2019
 -->
 <html lang="en">
   <head>
@@ -35,9 +35,28 @@
       label.required {
         font-weight: bold;
       }
+      .form-inline {
+        display: flex;
+        align-items: center;
+      }
+      label {
+        margin: 0;
+        flex-basis: 100px;
+      }
+      div {
+        text-align: center;
+      }
+      .jumbotron-fluid {
+        background-color: #5b7d87;
+        color: #fef9ff;
+      }
     </style>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="styles/restaurantStyles.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <script type="text/javascript" src="contactValid.js"></script>
+    <noscript>Your browser does not support JavaScript! <br />
+      Please enable JavaScript in order for the website to work properly!</noscript>
   </head>
   <body>
     <header>
@@ -45,51 +64,76 @@
     </header>
 
     <nav>
-      <a class="btn badge-pill" href="RestHome.html">Home</a>
-      <a class="btn badge-pill" href="RestMenu.html">Menu</a>
-      <a class="btn badge-pill active" href="RestContact.html">Contact Us</a>
+      <div class="row">
+        <div class="col-sm-3">
+          <a class="btn badge-pill" href="RestHome.html"><i class="fas fa-home"></i></a>
+          <a class="btn badge-pill" href="RestMenu.html">Menu</a>
+          <a class="btn badge-pill active" href="RestContact.html">Contact Us</a>
+       </div>
+     </div>
     </nav>
-
+    <div class="jumbotron-fluid">
+      <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel" data-interval="3000">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <h5>Hey, Big News!</h5>
+            <h8>We are opening up a new location in Edina, MN!</h8>
+          </div>
+          <div class="carousel-item">
+            <h5>We're rolling out our seasonal menu, </h5>
+            <h8>with special options for this season.</h8>
+          </div>
+          <div class="carousel-item">
+            <h5>The Drink of the Month is:</h5>
+            <h8>SG Special Brew</h8>
+          </div>
+        </div>
+      </div>
+    </div><br />
     <section>
       <article id="InfoRequest">
         <br />
-        <form action="RestSubmit.html" method="POST">
-          <label for="Name" class="required">Name: </label>
-          <input type="text" id="Name" name="Name" required /> <br />
-          <label for="Email" class="required">Email: </label>
-          <input type="text" id="Email" name="Email" required /> <br />
-          <label for="phone" class="required">Phone: </label>
-          <input type="text" id="phone" name="phone" required /> <br />
-          <label for="inquiry" class="required">Reason for Inquiry:</label>
-          <select id="inquiry" name="inquiry" required />
-            <option value="catering" selected>Catering</option>
-            <option value="party">Private Party</option>
-            <option value="feedback">Feedback</option>
-            <option value="other">Other</option>
-          </select><br />
-          <label for="info">Additional Information: </label> <br />
-          <textarea id="info" name="info" rows="10" cols="25"></textarea><br />
-          <fieldset>
-            <legend>Have you been to the restaurant? </legend>
-            <input type="radio" id="choice1" name="prevVisit" value="no" checked />
-            <label for="choice1">No</label>
-            <input type="radio" id="choice2" name="prevVisit" value="yes" />
-            <label for="choice2">Yes</label><br />
-          </fieldset>
-          <fieldset>
-            <legend>Best days to contact you: </legend>
-            <input type="checkbox" id="monday" name="interest" value="monday">
-            <label for="monday">M</label>
-            <input type="checkbox" id="tuesday" name="interest" value="tuesday">
-            <label for="tuesday">T</label>
-            <input type="checkbox" id="wednesday" name="interest" value="wednesday">
-            <label for="wednesday">W</label>
-            <input type="checkbox" id="thursday" name="interest" value="thursday">
-            <label for="thursday">Th</label>
-            <input type="checkbox" id="friday" name="interest" value="friday">
-            <label for="friday">F</label><br />
-          </fieldset>
-          <input type="submit" name="sendReq" value="Send Request">
+        <div class="row">
+          <div class="col-md-12">
+            <form action="#" method="POST">
+              <label for="Name" class="required">Name: </label>
+              <input type="text" id="Name" name="Name" required /> <br /><br />
+              <label for="Email" class="required">Email: </label>
+              <input type="text" id="Email" name="Email" required /> <br /><br />
+              <label for="phone" class="required">Phone: </label>
+              <input type="text" id="phone" name="phone" required /> <br /><br />
+              <label for="inquiry" class="required">Reason for Inquiry:</label>
+              <select id="inquiry" name="inquiry" required />
+                <option value="catering" selected>Catering</option>
+                <option value="party">Private Party</option>
+                <option value="feedback">Feedback</option>
+                <option value="other">Other</option>
+              </select><br />
+              <label for="info">Additional Information: </label> <br />
+              <textarea id="info" name="info" rows="10" cols="35"></textarea><br />
+              <fieldset>
+                <legend>Have you been to the restaurant? </legend>
+                <input type="radio" id="choice1" name="prevVisit" value="no" checked />
+                <label for="choice1">No</label>
+                <input type="radio" id="choice2" name="prevVisit" value="yes" />
+                <label for="choice2">Yes</label><br />
+              </fieldset>
+              <fieldset>
+                <legend>Best days to contact you: </legend>
+                <input type="checkbox" id="monday" name="interest" value="monday">
+                <label for="monday">M</label>
+                <input type="checkbox" id="tuesday" name="interest" value="tuesday">
+                <label for="tuesday">T</label>
+                <input type="checkbox" id="wednesday" name="interest" value="wednesday">
+                <label for="wednesday">W</label>
+                <input type="checkbox" id="thursday" name="interest" value="thursday">
+                <label for="thursday">Th</label>
+                <input type="checkbox" id="friday" name="interest" value="friday">
+                <label for="friday">F</label><br />
+              </fieldset>
+              <input type="submit" name="sendReq" value="Send Request" onclick="return validate();">
+            </div>
+          </div>
       </article>
     </section>
     <br />
